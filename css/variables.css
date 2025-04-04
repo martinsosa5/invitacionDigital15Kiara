@@ -1,0 +1,15 @@
+/*mediante root puedo pegar algo a todo el documento defino las variables que voy a utilizar */
+:root {
+    --tipografiaPoppins: 'Poppins', 'Arial';
+    --tipografiaArvo: "Arvo", sans-serif; 
+    --tipografiaDancing-Script: "Dancing Script", cursive; 
+    --tipografiaDamion: "Damion", cursive ;
+    --tipografiaPassion-One: "Passion One", sans-serif;
+    --tipografiaPacifico: "Pacifico", cursive; 
+    --tipografiaMerriweather-Sans: "Merriweather Sans", sans-serif ;
+    --colorRosa: #d6769c;
+    --colorRosaBlanco: #fff6f9;
+    --colorCeleste: #f3f5fb;
+    --colorAzul: #7697cb;
+    --colorGris: #6a6a6a;
+}

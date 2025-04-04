@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--tipografiaPoppins);
+}
+
+body {
+    background-color: var(--colorCeleste);
+}
+/* puse esto por que en el navegador de google chrome tenia un problema y 
+la pagina no se vea completo el ancho */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+

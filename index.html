@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV de SOl</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/eef5852768.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/img/peliculas-series/img-logo-favicon.png" type="image/x-icon">
+    <!-- Enlace al archivo CSS de AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Enlace al archivo JavaScript de AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+
+    <!-- Capa de superposición -->
+    <div id="overlay" class="d-flex flex-column text-center contenedor_superposicion">
+        <div class="circle_img text-center" data-aos="flip-right" data-aos-duration="2500">
+            <img src="/img/icono-inicio.jpg" alt="icon-img" class="img-fluid rounded-circle mw-100" >
+        </div>
+        <!-- <h1 class="mt-3">MIS XV KIARA</h1> -->
+        <h5 class="mx-3">QUIERO QUE SEAS PARTE DE ESTE MOMENTO TAN IMPORTANTE PARA MÍ</h5>
+        <button class="mt-2" id="ingresarBtn">Ingresar</button>
+    </div>
+
+
+
+    <header>
+
+        <div class="home_img d-flex">
+            <img src="/img/001.jpg" alt="img-principal">
+        </div>
+
+       <!--  <div class="header_text text-center mt-3">
+            <h2 class="m-0 p-0">- Mis XV -</h2>
+            <h1>Kiara</h1>
+        </div> -->
+
+        <hr class="linea">
+        <div class="timer container contenedor_contador text-center d-flex justify-content-center align-items-center" id="countdown"> 
+            <div class="row align-items-center justify-content-center">
+                        <div class="col-3 text-center">
+                            <h1 id="days">00</h1>
+                            <h5>DÍAS</h5>
+                        </div>
+                        <div class="col-3 text-center">
+                            <h1 id="hours">00</h1>
+                            <h5>HORAS</h5>
+                        </div>
+                        <div class="col-3 text-center">
+                            <h1 id="minutes">00</h1>
+                            <h5>MINUTOS</h5>
+                        </div>
+                        <div class="col-3 text-center">
+                            <h1 id="seconds">00</h1>
+                            <h5>SEGUNDOS</h5>
+                        </div>
+            </div>
+        </div>
+        <hr class="linea">
+        
+        
+        <!-- audio -->
+        <div class="contenedor_reproductor d-flex align-items-center justify-content-center py-3">
+            <audio id="musica" autoplay loop>
+                <source src="/audio/SEE YOU AGAIN featuring Kali Uchis (online-audio-converter.com).mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+        <!-- Botón flotante para reproducir/pausar el audio -->
+         <div class="contenedor_Botonflotante">
+            <button id="audioToggleButton" class="floating-button"><i class="fas fa-pause"></i></button>
+        </div> 
+         <!-- audio -->
+          
+    </header>
+
+    <main>
+
+        <div class="contenedor-frase d-flex justify-content-center">
+           <!--  <img src="/img/003.jpeg" alt="img"> -->
+            <div class="text-overlay">Toma esta fecha, este día, este motivo... <br> Dale el sentido que quieras y veni. <br> 
+            Quiero compartir contigo mi dicha, mi alegria, MIS XV años</div>
+        </div>
+        <div class="contenedor_dondeycuando mt-2">
+            <div class="row">
+                <!-- <section class="col-sm-12 col-md-12 col-lg-6 contenedor-info text-center px-5 " data-aos="fade-right" data-aos-offset="40" data-aos-easing="ease-in-sine">
+                    <hr class="lineaBlanca">
+                    <h2 class="text_titulo"><i class="fa-solid fa-church"></i> <br> CEREMONIA</h2>
+                    <hr class="lineaBlanca">
+                    <img class="contenedor_img" src="/img/iglesia.jpg" alt="iglesia">
+                    <p class="mt-2 fs-5"><b>Parroquia Nuestra Señora del Rosario</b> <br>Domingo 15 de diciembre a las 20:30 hs 
+                    </b></p>
+                   
+                    <p>Rivadavia 320 - Monteros -Tucumán</p>
+                    <a href="https://maps.app.goo.gl/1JKAKuNYZycWcPjRA" class="boton-mapa btn mt-1"><i class="fa-solid fa-location-dot p-1"></i> COMO LLEGAR</a>
+                </section> -->
+        
+                <section class="col-sm-12 col-md-12 col-lg-6 contenedor-info text-center px-5 mb-3" data-aos="fade-left" data-aos-offset="40" data-aos-easing="ease-in-sine">
+                    <hr class="lineaBlanca">
+                    <h2 class="text_titulo"><i class="fa-solid fa-champagne-glasses"></i> <br>FIESTA</h2>
+                    <hr class="lineaBlanca">
+                    <img class="contenedor_img" src="/img/casamonte.jpg" alt="iglesia">
+                    <p class="mt-2 fs-5"> <b>Casamonte</b> <br> Sabado 3 de 
+                        Mayo a las ??:?? hs<br>
+                    </p>
+                    <p>Ruta Provincial 325 - Monteros</p>
+                   <!--  <p>No olviden <b class="text-primary text-center">confirmar su presencia</b> al final de la invitación.</p> -->
+                    <a href="https://maps.app.goo.gl/nfZrNQH23UZE2vAy7?g_st=iw" class="boton-mapa btn mt-1"><i class="fa-solid fa-location-dot p-1"></i>COMO LLEGAR</a>
+                </section>
+            
+            </div>
+        </div>
+
+        <div class="container contenedor_dresscode d-flex flex-column justify-content-center align-items-center" data-aos="fade-right" data-aos-offset="40" data-aos-easing="ease-in-sine">
+            <hr class="linea">
+            <h1>Dress Code</h1>
+            <hr class="linea">
+            <div class="card_dresscode justify-content-center align-items-center d-flex">
+                <img src="/img/DRESSCODE.png" alt="imagen">
+            </div>
+            <p class="text-center m-1"><b>Elegante</b></p>
+        </div>
+       <!--  <div class="container contenedor_galeria d-flex flex-column justify-content-center align-items-center">
+            <hr class="linea">
+            <h1 class="text-center"><i class="fa-solid fa-camera-retro"></i> <br>Photos </h1>
+            <hr class="linea">
+            <section class="galeria_fotos">
+                <div class="container">
+                    <div class="row mt-0">
+                        <div class="col-6" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">
+                            <img src="/img/002.jpeg" alt="foto" class="img">
+                        </div>
+                        <div class="col-6" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine" >
+                            <img src="/img/004.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-12"  data-aos="zoom-out-left" data-aos-offset="30">
+                            <img src="/img/010.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-12"  data-aos="zoom-out-left" data-aos-offset="30">
+                            <img src="/img/013.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+    
+                    <div class="row mt-2">
+                        <div class="col-6" data-aos="fade-up" data-aos-offset="30">
+                            <img src="/img/011.jpeg" alt="foto" class="img">
+                        </div>
+                        <div class="col-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-offset="30">
+                            <img src="/img/012.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-12"  data-aos="zoom-out-left" data-aos-offset="30">
+                            <img src="/img/007.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-6" data-aos="fade-right" data-aos-offset="30" data-aos-easing="ease-in-sine">
+                            <img src="/img/006.jpeg" alt="foto" class="img">
+                        </div>
+                        <div class="col-6" data-aos="fade-left" data-aos-offset="30" data-aos-easing="ease-in-sine">
+                            <img src="/img/005.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-2">
+                        <div class="col-12"  data-aos="zoom-out-left" data-aos-offset="30">
+                            <img src="/img/009.jpeg" alt="foto" class="img">
+                        </div>
+                    </div>
+
+    
+                </div>
+            </section>
+        </div> -->
+
+        <div class="container contenedor_regalo d-flex flex-column justify-content-center align-items-center mb-5 text-center" data-aos="fade-right" data-aos-offset="40" data-aos-easing="ease-in-sine">
+            <hr class="linea">
+            <h1 class="text-center"><i class="fa-solid fa-gift"></i> <br>Regalo</h1>
+            <hr class="linea">
+            <h3>¡Lo mejor que podes darme es tu presencia! <br> Pero si quieres regalarme algo, voy a estar mas que agradecida.</h3>
+            <p><br><b>MERCADO PAGO<br>Alias:</b> $$$$$$$$$$ <br><b>CVU:</b> $$$$$$$$$$ <br><b>Titular:</b> $$$$$$$$$$</p>
+            <p><b><i class="fa-solid fa-envelope"></i> SOBRE DE EFECTIVO</b><br>También habrá un cofre en la entrada para que puedas depositarlo.</p>
+        </div>
+
+        <div class="banner_separador" data-aos="fade-left" data-aos-offset="40" data-aos-easing="ease-in-sine">
+            <h2 class="text-end fw-bolder fs-1 text-light">#15KIARA</h2>
+        </div>
+
+        <section class="contenedor_confirmacion" data-aos="fade-right" data-aos-offset="40" data-aos-easing="ease-in-sine">
+            <div class="container text-light text-center">
+                <h2>CONFIRMAR ASISTENCIA</h2>
+                <h3 >Espero que puedas venir a compartir
+                    conmigo este día inolvidable.</h3>
+                <h3><b>Confirmación de asistencia hasta el 14/04/25</b> <br>
+                    ¡Muchas Gracias!</h3>
+                <a href="https://wa.me/+5493863506385?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20evento.%20Mi%20nombre%20es%20
+                " class="boton-wsp btn mt-4"><i class="fa-brands fa-whatsapp m-1 fs-1"></i>   CONFIRMAR A ????</a>
+                <!-- <a href="https://wa.me/+5493863439307?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20evento.%20Mi%20nombre%20es%20
+                " class="boton-wsp btn mt-4"><i class="fa-brands fa-whatsapp m-1 fs-1"></i>   CONFIRMAR A ROSELA</a> -->
+            </div>
+        </section>
+
+        <!-- <div class="contenedor_img_final  d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-offset="40" data-aos-easing="ease-in-sine">
+            <img src="/img/002.jpeg" alt="img-principal">
+            <div class="texto-inferior">Sol</div>
+        </div> -->
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer  py-4 bg-dark" >
+        <div class="container">
+            <div class="col-12">
+                <p class="text-light text-center">Si te gustó la invitación contactanos para tener la tuya
+                    <i class="fa-brands fa-whatsapp m-1"></i> 3863447601 
+                </p>
+            </div>
+            <div class="col-12">
+                <p class="m-0 text-white-50 text-center">&copy; SLM</p>
+            </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+      <script>
+        document.getElementById("ingresarBtn").addEventListener("click", function() {
+            // Elimina la capa de superposición
+            const overlay = document.getElementById("overlay");
+            overlay.remove();
+
+            // Reproduce la música
+            const musica = document.getElementById("musica");
+            musica.play().catch((error) => {
+                console.error("No se pudo reproducir la música:", error);
+            });
+        });
+    </script>
+    <!-- audio -->
+    <script>
+        document.getElementById("audioToggleButton").addEventListener("click", function () {
+        const audioPlayer = document.getElementById("musica");
+        const buttonIcon = this.querySelector("i");
+        
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            buttonIcon.classList.remove("fas", "fa-play");
+            buttonIcon.classList.add("fas", "fa-pause"); // Cambiar a ícono de pausa
+        } else {
+            audioPlayer.pause();
+            buttonIcon.classList.remove("fas", "fa-pause");
+            buttonIcon.classList.add("fas", "fa-play"); // Cambiar a ícono de play
+        }
+         }
+        
+        
+        );
+    </script>
+    <!-- Contador regresivo -->
+    <script>
+        // Fecha objetivo (21/12/2024 a las 20:30:00)
+        const targetDate = new Date("May 3, 2025 20:30:00").getTime();
+    
+        // Función para actualizar el contador cada segundo
+        const countdownInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+    
+            // Cálculos de días, horas, minutos y segundos
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            // Mostrar el contador en cada elemento correspondiente
+            document.getElementById("days").textContent = days < 10 ? "0" + days : days;
+            document.getElementById("hours").textContent = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+    
+            // Detener el contador cuando llegue a la fecha objetivo
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "¡Evento en curso!";
+            }
+        }, 1000);
+    </script>
+    <!-- par inicializar AOS -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* Estilos de la capa de superposición */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorCeleste); /* Capa semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Se coloca en el frente */
+}
+
+/* Estilo del botón */
+#ingresarBtn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: var(--colorRosaBlanco);
+    background-color: var(--colorAzul);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedor_superposicion h1{
+    color: var(--colorAzul);
+    font-size: 35px;
+    font-family: var(--tipografiaMerriweather-Sans);
+    font-weight: bold;
+}
+
+.contenedor_superposicion h5{
+    color: var(--colorGris);
+    font-weight: 300;
+}
+
+.circle_img{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 3px var(--colorAzul);
+    /* para darle un efecto a la foto (trabajamos con el desenfoque y el brillo)
+    cursor: pointer;
+    filter: blur(0.5px) brightness(85%);
+    transition: all 1s ease;
+    &:hover{
+        filter: blur(0) brightness(100%);
+    }
+        */
+}
+
+.contenedor-frase{
+   /*  position: relative;
+    display: inline-block; */
+    background-color: var(--colorAzul);
+}
+
+.contenedor-frase img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(70%);  /* Aplica un filtro de oscuridad a la imagen */
+}
+
+.text-overlay {
+   /*  position: absolute; */
+    bottom: 0;  /* Coloca el texto en la parte inferior */
+    left: 0;
+    width: 100%;  /* Hace que el texto ocupe todo el ancho de la imagen */
+    color: white;  /* Color del texto */
+    font-size: 25px;  /* Tamaño del texto */
+    font-weight: bold;  /* Opcional: negrita */
+    text-align: center;  /* Centra el texto horizontalmente */
+    padding: 10px;  /* Espaciado alrededor del texto */
+    font-family: var(--tipografiaDancing-Script);
+}
+
+/* --------- SECCION DE DONDE Y CUANDO --------- */
+
+/* .contenedor_dondeycuando{
+    background-color: var(--colorRosa);
+} */
+.contenedor_card img{
+    width: 100%;
+}
+
+.text_titulo{
+    color: var(--colorAzul);
+}
+
+.contenedor-info p{
+    color: var(--colorAzul);
+}
+.contenedor_img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(118, 151, 203, 0.3); /* Sombra */
+}
+.boton-mapa{
+    background-color: var(--colorAzul);
+    color: white;
+    font-family: var(--tipografiaMerriweather-Sans);
+}
+.boton-mapa:hover{
+    background-color: var(--colorCeleste);
+    color: var(--colorAzul);
+    border: 1px solid #7697cb;
+}
+
+.lineaBlanca {
+    border: 2px solid #7697cb; width: 80%; margin: 20px auto;
+}
+/* ---------------------------------------------------- */
+
+/* DRESS CODE */
+.card_dresscode{
+    background-color: var(--colorAzul);
+    width: 250px;      /* Ajusta el tamaño del círculo */
+    height: 250px;     /* Igual que el width para que sea un círculo */
+    border-radius: 50%;  /* Esto redondea las esquinas para hacer el círculo */
+    overflow: hidden;   /* Asegúrate de que la imagen no se salga del contenedor */
+}
+
+.contenedor_dresscode h1{
+    color: var(--colorAzul);
+}
+.card_dresscode img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenedor_dresscode p{
+    color: var(--colorGris);
+}
+
+/* ---------------------------------------------------- */
+.contenedor_galeria h1{
+    color: var(--colorRosa);
+}
+/* GALERIA DE FOTOS */
+.galeria_fotos{
+   /*  background-color: rgb(238, 238, 238); */
+    padding: 1.5rem;
+   /*  padding-top: 2rem; */
+    /* margin-top: 1.5rem; */
+    }
+    
+    .img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra negra */
+    }
+    
+/* ---------------------------------------------------- */
+
+/*---------- REGALO -------------- */
+.contenedor_regalo h1{
+    color: var(--colorAzul);
+}
+.contenedor_regalo h3{
+    font-family: var(--tipografiaDancing-Script);
+    font-size: 30px;
+    color: var(--colorAzul);
+}
+.contenedor_regalo p{
+    color: var(--colorGris);
+}
+/* ---------------------------------------------------- */
+
+/* CONFIRMAR ASISTENCIA */
+
+.banner_separador{
+    background-color: var(--colorAzul);
+    padding: 0.5rem;
+}
+.contenedor_confirmacion{
+    background-color: var(--colorAzul);
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url('/img/fondo-asistencia3.jpg');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+.contenedor_confirmacion h2{
+    color: var(--colorAzul);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contenedor_confirmacion h3{
+    color: var(--colorGris);
+}
+.boton-wsp{
+    background-color: rgb(37, 211, 102);
+    color: aliceblue;
+    font-family: var(--tipografiaMerriweather-Sans);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.boton-wsp:hover{
+    background-color:aliceblue ;
+    color: rgb(37, 211, 102);
+}
+/* ---------------------------------------------------- */
+
+/* IMAGEN FINAL */
+
+.contenedor_img_final {
+    position: relative;
+    display: inline-block; /* Asegura que el contenedor solo ocupe el espacio de la imagen */
+}
+
+.contenedor_img_final img {
+    width: 100%; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto;
+}
+
+.contenedor_img_final::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    /* Degradado de negro a transparente de abajo hacia arriba */
+}
+
+.texto-inferior {
+    position: absolute;
+    bottom: 10px; /* Espacio desde el borde inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 80px; /* Ajusta el tamaño del texto */
+    font-family: var(--tipografiaDancing-Script);
+    padding: 10px;
+    z-index: 2;
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+/* ---------------------------------------------------- */
+
+
+/* MEDIAS QUERIES */
+/* Estilos para tablet */
+@media (min-width: 768px) {
+    .text-overlay {
+        font-size: 35px;  /* Tamaño del texto */
+    }
+}
+
+
+/* Estilos para laptop */
+@media (min-width: 1280px) {
+    .text-overlay {
+        font-size: 40px;  /* Tamaño del texto */
+    }
+
+    .contenedor-frase img{
+        width: 80%;
+    }
+
+}
+
