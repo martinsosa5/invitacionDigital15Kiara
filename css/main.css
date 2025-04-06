@@ -52,8 +52,8 @@
 }
 
 .contenedor-frase{
-   /*  position: relative;
-    display: inline-block; */
+    position: relative;
+    display: inline-block;
     background-color: var(--colorAzul);
 }
 
@@ -61,11 +61,11 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    filter: brightness(70%);  /* Aplica un filtro de oscuridad a la imagen */
+    filter: brightness(40%);  /* Aplica un filtro de oscuridad a la imagen */
 }
 
 .text-overlay {
-   /*  position: absolute; */
+    position: absolute;
     bottom: 0;  /* Coloca el texto en la parte inferior */
     left: 0;
     width: 100%;  /* Hace que el texto ocupe todo el ancho de la imagen */
@@ -117,8 +117,11 @@
 /* ---------------------------------------------------- */
 
 /* DRESS CODE */
-.card_dresscode{
+.contenedor_dresscode{
     background-color: var(--colorAzul);
+}
+.card_dresscode{
+    background-color: var(--colorCeleste);
     width: 250px;      /* Ajusta el tamaño del círculo */
     height: 250px;     /* Igual que el width para que sea un círculo */
     border-radius: 50%;  /* Esto redondea las esquinas para hacer el círculo */
@@ -126,7 +129,7 @@
 }
 
 .contenedor_dresscode h1{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
 }
 .card_dresscode img{
     width: 50%;
