@@ -29,7 +29,7 @@
 }
 
 .contenedor_superposicion h1{
-    color: var(--colorCeleste);
+    color: var(--colorDorado);
     font-size: 55px;
     font-family: var( --tipografiaDancing-Script);
     font-weight: bold;
@@ -175,7 +175,7 @@
 .contenedor_regalo h3{
     font-family: var(--tipografiaDancing-Script);
     font-size: 30px;
-    color: var(--colorCeleste);
+    color: var(--colorDorado);
 }
 .contenedor_regalo p{
     color: var(--colorCeleste);
@@ -200,7 +200,7 @@
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
 }
 .contenedor_confirmacion h2{
-    color: var(--colorCeleste);
+    color: var(--colorDorado);
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
