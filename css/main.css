@@ -11,27 +11,32 @@
     justify-content: center;
     z-index: 9999; /* Se coloca en el frente */
 }
-
+.contenedor_superposicion{
+    background: linear-gradient(rgba(42, 57, 76, 0.9), rgba(42, 57, 76, 0.9)), url('/img/fondo-asistencia3.jpg');
+    background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
 /* Estilo del botón */
 #ingresarBtn {
     padding: 15px 30px;
     font-size: 18px;
-    color: var(--colorRosaBlanco);
-    background-color: var(--colorAzul);
+    color: var(--colorAzul);
+    background-color: var(--colorCeleste);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .contenedor_superposicion h1{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
     font-size: 35px;
     font-family: var(--tipografiaMerriweather-Sans);
     font-weight: bold;
 }
 
 .contenedor_superposicion h5{
-    color: var(--colorGris);
+    color: var(--colorCeleste);
     font-weight: 300;
 }
 
@@ -54,7 +59,7 @@
 .contenedor-frase{
     position: relative;
     display: inline-block;
-    background-color: var(--colorAzul);
+    /* background-color: var(--colorAzul); */
 }
 
 .contenedor-frase img{
@@ -87,27 +92,27 @@
 }
 
 .text_titulo{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
 }
 
 .contenedor-info p{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
 }
 .contenedor_img{
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(118, 151, 203, 0.3); /* Sombra */
+    box-shadow: 10px 10px 15px rgba(118, 151, 203, 0.1); /* Sombra */
 }
 .boton-mapa{
-    background-color: var(--colorAzul);
-    color: white;
+    background-color: var(--colorCeleste);
+    color: var(--colorAzul);
     font-family: var(--tipografiaMerriweather-Sans);
 }
 .boton-mapa:hover{
-    background-color: var(--colorCeleste);
-    color: var(--colorAzul);
+    background-color: var(--colorAzul);
+    color: var(--colorCeleste);
     border: 1px solid #7697cb;
 }
 
@@ -118,10 +123,11 @@
 
 /* DRESS CODE */
 .contenedor_dresscode{
-    background-color: var(--colorAzul);
+    background-color: var(--colorCeleste);
+    color: var(--colorAzul);
 }
 .card_dresscode{
-    background-color: var(--colorCeleste);
+    background-color: var(--colorAzul);
     width: 250px;      /* Ajusta el tamaño del círculo */
     height: 250px;     /* Igual que el width para que sea un círculo */
     border-radius: 50%;  /* Esto redondea las esquinas para hacer el círculo */
@@ -129,7 +135,7 @@
 }
 
 .contenedor_dresscode h1{
-    color: var(--colorCeleste);
+    color: var(--colorAzul);
 }
 .card_dresscode img{
     width: 50%;
@@ -138,7 +144,7 @@
 }
 
 .contenedor_dresscode p{
-    color: var(--colorGris);
+    color: var(--colorAzul);
 }
 
 /* ---------------------------------------------------- */
@@ -164,36 +170,37 @@
 
 /*---------- REGALO -------------- */
 .contenedor_regalo h1{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
 }
 .contenedor_regalo h3{
     font-family: var(--tipografiaDancing-Script);
     font-size: 30px;
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
 }
 .contenedor_regalo p{
-    color: var(--colorGris);
+    color: var(--colorCeleste);
 }
 /* ---------------------------------------------------- */
 
 /* CONFIRMAR ASISTENCIA */
 
 .banner_separador{
-    background-color: var(--colorAzul);
+    background-color: var(--colorCeleste);
     padding: 0.5rem;
+    color: var(--colorAzul);
 }
 .contenedor_confirmacion{
     background-color: var(--colorAzul);
     padding-top: 2rem;
     padding-bottom: 8rem;
-    color: rgb(25, 20, 52);
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(25, 20, 52, 0.9)), url('/img/fondo-asistencia3.jpg');
+    
+    background: linear-gradient(rgba(42, 57, 76, 0.9), rgba(243, 245, 251, 0.1)), url('/img/fondo-asistencia3.jpg');
     background-size: cover; /* Ajustar la imagen al tamaño del contenedor */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
 }
 .contenedor_confirmacion h2{
-    color: var(--colorAzul);
+    color: var(--colorCeleste);
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
