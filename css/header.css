@@ -36,9 +36,6 @@
     color: var(--colorCeleste);
 }
 
-.header_h1{
-    font-family: var( --tipografiaDancing-Script);
-}
 
 .contenedor_contador{
     color: var(--colorCeleste); 

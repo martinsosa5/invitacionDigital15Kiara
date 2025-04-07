@@ -30,8 +30,8 @@
 
 .contenedor_superposicion h1{
     color: var(--colorCeleste);
-    font-size: 35px;
-    font-family: var(--tipografiaMerriweather-Sans);
+    font-size: 55px;
+    font-family: var( --tipografiaDancing-Script);
     font-weight: bold;
 }
 
